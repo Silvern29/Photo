@@ -137,6 +137,7 @@ html body header .heading {
   justify-content: left;
   align-items: center;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/_DSC3211-Bearbeitet (2).jpg");
   -webkit-background-size: cover;
   background-size: cover;
@@ -193,6 +194,7 @@ html body .hobby .pages div:nth-child(4) {
 }
 html body .container .title {
   height: 25vh;
+  height: calc(var(--vh, 1vh) * 25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,6 +212,7 @@ html body .container .pages {
 }
 html body .container .pages div {
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -229,7 +232,8 @@ html body .container .pages div a {
   text-decoration: none;
 }
 html body footer {
-  min-height: 50vh;
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -265,6 +269,7 @@ html body footer .copy {
   }
   html body .himmel {
     height: 300vh;
+    height: calc(var(--vh, 1vh) * 300);
   }
   html body .himmel .title {
     background: radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.8), rgba(21, 98, 47, 0.7));
@@ -283,6 +288,7 @@ html body footer .copy {
   }
   html body .hotel {
     height: 300vh;
+    height: calc(var(--vh, 1vh) * 300);
   }
   html body .hotel .title {
     background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.8), rgba(21, 98, 47, 0.7));
@@ -301,6 +307,7 @@ html body footer .copy {
   }
   html body .hobby {
     height: 300vh;
+    height: calc(var(--vh, 1vh) * 300);
   }
   html body .hobby .title {
     background: radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.8), rgba(21, 98, 47, 0.7));
@@ -324,6 +331,7 @@ html body footer .copy {
     width: 50%;
     flex-grow: 1;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   html body .container .title h1 {
     writing-mode: unset;
@@ -334,6 +342,7 @@ html body footer .copy {
   }
   html body .container .pages div {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   html body .container .pages h2 {
     font-size: 2em;
@@ -341,6 +350,7 @@ html body footer .copy {
   html body footer {
     flex-direction: unset;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: radial-gradient(circle at bottom, black, darkgray);
   }
 }
