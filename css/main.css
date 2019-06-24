@@ -37,11 +37,11 @@
 }
 html {
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 html body {
   padding: 0;
   margin: 0;
-  font-size: 16px;
 }
 html body header {
   font-family: "Inika", sans-serif;
@@ -94,7 +94,7 @@ html body header nav .panel .back {
 html body header nav .panel .back a {
   text-transform: uppercase;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
   font-weight: 600;
 }
@@ -103,7 +103,7 @@ html body header nav .panel .front {
 }
 html body header nav .panel .front .fas {
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 html body header nav .panel:hover {
   -webkit-transform: rotateX(180deg);
@@ -122,12 +122,12 @@ html body header nav .photo {
   background: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.8), rgba(0, 255, 38, 0.7));
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 html body header nav .photo .fas {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 html body header nav .about {
   background: radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.8), rgba(255, 247, 0, 0.7));
@@ -145,7 +145,7 @@ html body header .heading {
 html body header .heading h1 {
   padding-left: 20vw;
   color: white;
-  font-size: 45px;
+  font-size: 2.8rem;
 }
 html body .himmel .title {
   background: radial-gradient(circle at top right, rgba(0, 0, 0, 0.8), rgba(21, 98, 47, 0.7));
@@ -198,7 +198,7 @@ html body .container .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 1.9rem;
   font-family: "Inika", sans-serif;
   margin: 0 !important;
   z-index: -1;
@@ -221,10 +221,11 @@ html body .container .pages div {
 }
 html body .container .pages div h2 {
   text-align: center;
+  font-size: 1.9rem;
 }
 html body .container .pages div p {
   width: 80%;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
 }
 html body .container .pages div a {
@@ -239,7 +240,7 @@ html body footer {
   align-items: center;
   flex-direction: column;
   background: radial-gradient(circle at bottom right, black, darkgray);
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
 }
 html body footer .address {
@@ -249,7 +250,15 @@ html body footer .copy {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
 @media only screen and (min-width: 840px) {
+  html {
+    font-size: 16px;
+  }
   html body header nav {
     position: fixed;
     width: 650px;
@@ -265,7 +274,7 @@ html body footer .copy {
   html body header nav .photo {
     width: 260px;
     height: 130px;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   html body .himmel {
     height: 300vh;
@@ -333,9 +342,6 @@ html body footer .copy {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  html body .container .title h1 {
-    writing-mode: unset;
-  }
   html body .container .pages {
     width: 50%;
     flex-grow: 1;
@@ -345,7 +351,7 @@ html body footer .copy {
     height: calc(var(--vh, 1vh) * 100);
   }
   html body .container .pages h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   html body footer {
     flex-direction: unset;

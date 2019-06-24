@@ -46,8 +46,6 @@ window.addEventListener('resize', () => {
 });
 
 var cStatus;
-// var cWidth = document.documentElement.clientWidth;
-// var $window = $(window)
 
 if (document.documentElement.clientWidth >= 822) {
   cStatus = 'large';
@@ -55,14 +53,14 @@ if (document.documentElement.clientWidth >= 822) {
   cStatus = 'small';
 }
 
-let reload = () => {
+let cReload = () => {
   var myUrl = window.location;
   window.location.replace(myUrl);
 }
 
 window.onresize = function() {
   if ((cStatus != 'small' && document.documentElement.clientWidth < 822) || (cStatus != 'large' && document.documentElement.clientWidth >= 822)) {
-    reload();
+    cReload();
   }
 }
 
